@@ -26,7 +26,10 @@ jobs:
 
     - name: Install alex, happy
       run: |
-        cabal install alex happy
+        which alex
+        which happy
+        cabal install happy
+        cabla install alex
 
     - name: Install dependencies
       run: |
